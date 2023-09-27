@@ -20,9 +20,9 @@ void observerPattern(){
 
 void factoryPattern() {
   print('We need 10 meters of wire for a house and 40 meters for a school');
-  Wire forHouse = WireFactory.newWire(TypeWire.lowVoltage, 10);
+  Wire forHouse = WireFactory.lowVoltage(10);
   print('For the house we use a wire with radius: ${forHouse.getRadius()}');
-  Wire forSchool = WireFactory.newWire(TypeWire.mediumVoltage, 40);
+  Wire forSchool = WireFactory.mediumVoltage(40);
   print('For the school we use a wire with radius: ${forSchool.getRadius()}');
 }
 

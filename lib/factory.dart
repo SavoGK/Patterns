@@ -13,11 +13,8 @@ enum TypeWire {
 }
 
 class WireFactory {
-  static Wire newWire (TypeWire tw, int long) {
-    switch (tw) {
-      case TypeWire.lowVoltage: return Wire(1.5, long);
-      case TypeWire.mediumVoltage: return Wire(4, long);
-      case TypeWire.highVoltage: return Wire(7.5, long);
-    }
-  }
+  static Wire lowVoltage ( int long) => Wire(1.5, long);
+  static Wire mediumVoltage ( int long) => Wire(4, long);
+  static Wire highVoltage ( int long) => Wire(7.5, long);
+
 }
